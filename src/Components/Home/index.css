@@ -1,0 +1,149 @@
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to left, lightblue, transparent, transparent, transparent);
+    height: 100vh;
+    padding: 50px;
+}
+
+.paycontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    padding: 5px;
+    border-style: solid; 
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(116, 207, 237);
+    font-size: 20px;
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.paybutton {
+    background-color: black;
+    color: white;
+    border-radius: 60px;
+    width: 150px;
+    height: 30px;
+  }
+
+.paytext {
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.cardcontainer {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+ 
+.firstcard {
+    border-style: solid; 
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(116, 207, 237);
+    text-align: left;
+    padding: 20px;
+}
+.card-subtitle {
+    font-size: 15px;
+}
+.card-description {
+    font-size: 15px;
+}
+.pricecontainer {
+    display: flex;
+    flex-direction: row;
+}
+.card-price {
+     font-size: 50px;
+     display: flex;
+     flex-direction: row;
+}
+.priceendtag {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 57px;
+}
+.card {
+    border-style: transparent; 
+    border-radius: 20px;
+    border-width: 3px;
+    box-shadow: 0px 6px 6px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 20px;
+    margin-left: 60px;
+}
+.advancedcard {
+    border-style: transparent; 
+    border-radius: 20px;
+    border-width: 3px;
+    box-shadow: 0px 6px 6px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 20px;
+    margin-left: 60px;
+    background-color: white;
+}
+.cardinsidecontainer {
+    background-color: rgb(224, 241, 246);
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    margin: none;
+}
+.tickhead {
+    padding-top: 20px;
+    font-size: 20px;
+}
+.lastbutton {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.freebutton {
+    background-color: black;
+    color: white;
+    border-radius: 60px;
+    width: max-content;
+    height: 50px;
+    width: 400px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .paycontainer {
+        display: none;
+    }
+    .main-container {
+        background: linear-gradient(to left, white, transparent, transparent, transparent);
+        height: 100vh;
+    }
+    .card-subtitle {
+        display: none;
+    }
+    .card-description {
+        display: none;
+    }
+    .card {
+        display: none;
+    }
+    .advancedcard {
+        display: none;
+    }
+    .firstcard {
+        width: 310px;
+        border-color: rgb(246, 246, 247);
+    }
+}
